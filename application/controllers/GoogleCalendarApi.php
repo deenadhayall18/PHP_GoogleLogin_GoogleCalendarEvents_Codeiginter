@@ -10,9 +10,9 @@ class GoogleCalendarApi extends CI_Controller {
 		$this->load->model("Events_model"); //to load model
 		$this->load->library('session');
 		$this->load->library('upload');		
-		define('client_id', '452534868234-luf6g1pv56ldub4k8l5idodjb27u82ch.apps.googleusercontent.com');
-		define('client_secret_id', 'AYCYcck4osoPq8pum5MV6uEI');
-		define('client_redirect_url', 'http://localhost/kohana_crud/google-login');
+		define('client_id', 'Enter Client ID');
+		define('client_secret_id', 'Enter Client Secret ID');
+		define('client_redirect_url', 'Enter Redirect URL');
 	}
 	function GetAccessToken($client_id, $redirect_uri, $client_secret, $code) {	
 		$url = 'https://accounts.google.com/o/oauth2/token';			
